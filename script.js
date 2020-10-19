@@ -19,7 +19,8 @@ function darkMode(){
     nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
     textbox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
     toggleIcon.children[0].textContent = 'Dark Mode';
-    toggleIcon.children[1].classList.replace('fa-sun' , 'fa-moon');
+    toggleIcon.children[1].classList.remove('fa-sun'); 
+    toggleIcon.children[1].classList.add('fa-moon');
     imageMode('dark');
 }
 
@@ -28,7 +29,8 @@ function lightMode(){
     nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
     textbox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
     toggleIcon.children[0].textContent = 'Light Mode';
-    toggleIcon.children[1].classList.replace('fa-moon' , 'fa-sun');
+     toggleIcon.children[1].classList.remove('fa-moon'); 
+    toggleIcon.children[1].classList.add('fa-sun');
     imageMode('light');
 }
 
